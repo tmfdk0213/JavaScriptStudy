@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello">안녕하세요</h1>
+    <!-- <h1 id="hi">JS 초보에요</h1> -->
+
+    <script>
+      document.getElementById('hello').innerHTML = '안녕';
+      //   document.getElementById('hi').innerHTML = 'JS 고수에요';
+      //   document.getElementById('??').?? = '??';
+      //getElementById('??') = 바꿀 html요소 (id를 바꾸고 싶으면 id를 적으면 됨 )
+      //getElementById('hello').style.color = 'red';글자를 빨간색으로 바꾸고 싶다면 이렇게 적으면 됨
+      //UI만드는 step
+      //   1.HTML/CSS로 미리 디자인
+      //   2.필요할 때 보여달라고 코드짬 (자바스크립트로)
+      document.getElementById('hello').style.fontSize = '16px';
+    </script>
+  </body>
+</html>
