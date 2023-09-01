@@ -9,10 +9,30 @@
   </head>
   <body>
     <div class="alert-box" id="alert">
-      <p id="title">알림창임</p>
-      <button id="close">닫기</button>
-      <!-- <button onclick=" 알림창닫기('none');">닫기</button> -->
+      알림창임
+      <button onClick="알림창닫기()">닫기</button>
     </div>
+    <!-- <button onClick="알림창열기()">열기</button> -->
+    <button id="close">닫기</button>
+    <!-- <button onClick="alert박스 보여주셈">버튼</button> -->
+    <!-- <button onClick="document.getElementById('alert').style.display='block';" -->
+    <!-- <button onClick="alert박스 닫아주셈">버튼</button> -->
+    <!-- <button onClick="document.getElementById('alert').style.display='none';" -->
+
+    <!-- funtion문법
+    긴코드를 축약하고 싶을 때 사용 
+  funtion 작명(){
+    document.getElementById('alert').style.display = 'block';
+  } -->
+    <!-- function 문법 사용하면 -->
+    <!-- <button onClick='작명()'>버튼</button> -->
+    <!-- function 알림창열기() {
+          document.getElementById('alert').style.display = 'block';
+        }
+        function 알림창닫기() {
+          document.getElementById('alert').style.display = 'none';
+        } -->
+    <!-- <button onclick=" 알림창닫기('none');">닫기</button> -->
 
     <!-- //복잡하면 한글로짜고 코드로 옮겨보셈
 //1.제목을 바꿈=p태그 내용을 id로 바꿈
@@ -22,6 +42,19 @@
     <button onClick="비번알림창()">버튼2</button>
 
     <script>
+      //구멍은 파라미터라고 함
+      // function 알림창열기(구멍){
+      //   document.getElementById('alert').style.display = 구멍;
+      // }
+
+      // 알림창열기('안녕'); = 구멍자리에 '안녕'을 넣어서 실행해 주세요
+      // 알림창열기('바보'); = 구멍자리에 '바보'를 넣어서 실행해 주세요
+      // 알림창열기('block'); = 구멍자리에 block이 들어가 알림창이 열림
+      // function 알림창열기(구멍, 구멍2){
+      //   document.getElementById(구멍2).style.display = 구멍;
+      // }
+      // 알림창열기('구멍', '구멍2')
+
       function 아이디알림창() {
         document.getElementById('title').innerHTML = '아이디 입력하셈';
         document.getElementById('alert').style.display = 'block';
@@ -31,20 +64,17 @@
         document.getElementById('alert').style.display = 'block';
       }
 
-      document.getElementById('close').addEventListener('click', function(){
+      document.getElementById('close').addEventListener('click', function () {
         document.getElementById('alert').style.display = 'none';
       });
       //addEventListerner가 onClick역할을 대신할수있음
       //파라미터를 2개 입력해줘야함
-      //첫번째는 문자 , 두번째는 함수 
+      //첫번째는 문자 , 두번째는 함수
       //id를 클릭했을때 function(){코드~~~} 안에있는 코드를 실행해준다는 의미
       //event란 클릭 /키입력/ 스크롤/ 드래그등등 조작을 가하는 것들
-      //addEventLister('event명', 함수) 
+      //addEventLister('event명', 함수)
       //파라미터 자리에 들어가는function함수를 콜백함수라고 부름
-      //순차적으로 실행하고 싶을때 작성하는 형태 
-      function 알림창닫기() {
-        document.getElementById('alert').style.display = 'none';
-      }
+      //순차적으로 실행하고 싶을때 작성하는 형태
     </script>
 
     <!-- // 알림창열기('block');
@@ -53,7 +83,6 @@
 //id는 중복을 허용하지 않는데 class명은 중복을 허용함 
 //class명 뒤에는 항상 indexing 을 해줘야함 (위에서부터 몇번째 className인지를 찾아주기위해서 인덱싱을 사용함/중복이 가능하기 때문에)
 //ex)getElementsByClassName('title1')[0]//className이 title1인것 중에 0번째인 요소
-//<button>을 tag name이라고함
-
+//<button>을 tag name이라고함 -->
   </body>
 </html>
