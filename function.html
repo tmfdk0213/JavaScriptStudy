@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="alert-box" id="alert">
+      알림창임
+      <button onClick="알림창닫기()">닫기</button>
+    </div>
+    <button onClick="알림창열기()">버튼</button>
+
+    <script>
+      function 알림창열기() {
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      function 알림창닫기() {
+        document.getElementById('alert').style.display = 'none';
+      }
+      //구멍은 파라미터라고 함
+      // function 알림창열기(구멍){
+      //   document.getElementById('alert').style.display = 구멍;
+      // }
+      //알림창열기('구멍')
+
+      // 알림창열기('안녕'); = 구멍자리에 '안녕'을 넣어서 실행해 주세요
+      // 알림창열기('바보'); = 구멍자리에 '바보'를 넣어서 실행해 주세요
+      // 알림창열기('block'); = 구멍자리에 block이 들어가 알림창이 열림
+
+      // function 알림창열기('block'){
+      //   document.getElementById('alert').style.display = 'block';
+      // }
+
+      // function 알림창열기(구멍, 구멍2){
+      //   document.getElementById(구멍2).style.display = 구멍;
+      // }
+      // 알림창열기('구멍', '구멍2')
+
+      //function plus(구멍){
+      //  2 + 구멍 }
+
+      // plus(1);
+      // plus(2);
+      // plus(3);
+    </script>
+  </body>
+</html>

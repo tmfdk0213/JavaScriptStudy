@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="alert-box" id="alert">
+      <p id="title">알림창임</p>
+      <button onClick="알림창열기()">닫기</button>
+    </div>
+
+    <button onClick="아이디알림창()">버튼1</button>
+    <button onClick="비번알림창()">버튼2</button>
+
+    <script>
+      function 아이디알림창() {
+        document.getElementById('title').innerHTML = '아이디입력하셈';
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      function 비번알림창() {
+        document.getElementById('title').innerHTML = '비번입력하셈';
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      function 알림창열기() {
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      //한글로 먼저 코드를 짜보기
+      //1.P태그 내용을 아이디/비번입력으로 바꿈
+      //document.getElementById('alert').innerHTML = '아이디입력하셈';
+      //2.띄움
+      //document.getElementById('alert').style.display = 'block';
+      <button onClick='1.P태그 내용을 아이디/비번입력으로 바꿈 2.띄움'>버튼</button>;
+    </script>
+  </body>
+</html>
