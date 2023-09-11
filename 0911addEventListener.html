@@ -17,14 +17,31 @@
     <button onClick="비번알림창()">버튼2</button>
 
     <script>
-      document.getElementById('close').addEventListener('close', function () {});
-      //  document.getElementById('close').를 addEventListener('click'클릭하면
+      document.getElementById('close').addEventListener('click', function () {
+        document.getElementById('alert').style.display = 'none';
+      });
+      //  document.getElementById('close').를 addEventListener('click'클릭하면(이벤트명)
       //function(){코드~~~}); 안에있는 코드를 실행해줌
+      //function () 콜백함수 = 파라미터 자리에 들어가는 함수/ 순차적으로 실행하고 싶을 때 사용
+
+      function 아이디알림창() {
+        document.getElementById('title').innerHTML = '아이디입력하셈';
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      function 비번알림창() {
+        document.getElementById('title').innerHTML = '비번입력하셈';
+        document.getElementById('alert').style.display = 'block';
+      }
+
       function 알림창열기(구멍) {
         document.getElementById('alert').style.display = 구멍;
       }
 
-      //addEventListener(onClick대신에 사용)
+      //addEventListener('event명')(onClick대신에 사용)
+      //scroll (스크롤)
+      //mouseover(마우스 갖다대면)
+      //Bootstrap라이브러리를 사용하면 복붙식으로 개발이 가능
     </script>
   </body>
 </html>
